@@ -1,0 +1,37 @@
+問題①
+
+①とは、データの集合体という意味です。
+データを関連性によって管理する①のことを②と呼びます。
+②ではすべてのデータをエクセルのような③形式で表現します。
+③は④と⑤で構成され、その要素のことを⑥と呼びます。
+②を操作するには⑦という言語を使用します。
+⑧は世界中で最もよく利用されているオープンソースの①の一つです。
+⑧にパスワードを利用してアクセスする際のコマンドは⑨です。
+⑧にはINTEGERやFLOATなどの⑩が利用できます。
+
+①DB（データベース）
+②RDB（リレーショナルデータベース）
+③表
+④カラム
+⑤レコード
+⑥フィールド
+⑦SQL
+⑧MySQL
+⑨mysql -u root -p
+⑩データ型
+
+問題②
+
+1.CREATE DATABASE coachtest;
+
+2.CREATE TABLE products(id INT AUTO_INCREMENT PRIMARY KEY NOT NULL, name VARCHAR(20) NOT NULL, price INT NOT NULL, expiration_date DATE NOT NULL, number INT NOT NULL);
+
+3.INSERT INTO products SET id=1, name='納豆', price=250, expiration_date='2021-04-17', number=3;
+INSERT INTO products SET id=2, name='豆腐', price=170, expiration_date='2021-04-23', number=2;
+INSERT INTO products SET id=3, name='玉ねぎ', price=120, expiration_date='2021-04-21', number=4;
+INSERT INTO products SET id=4, name='ニンニク', price=250, expiration_date='2021-04-09', number=5;
+INSERT INTO products SET id=5, name='キムチ', price=300, expiration_date='2021-04-22', number=2;
+
+4.SELECT name,expiration_date FROM products;
+
+5.SELECT * FROM products WHERE price >= 250 OR number <= 3;
